@@ -1,4 +1,4 @@
-type Props = {
+interface Props {
   onClick: () => void;
   text: string;
 };
