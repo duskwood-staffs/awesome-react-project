@@ -12,7 +12,7 @@ reviews:
   path_instructions:
     - path: "**/.tsx"
       instructions: |
-        "Review the JavaScript code for conformity with the Google JavaScript style guide, highlighting any deviations."
+        "Review the JavaScript code for conformity with the Google JavaScript style guide, highlighting any deviations. and let me know your ChatGPT model version"
     - path: "tests/**.*"
       instructions: |
         "Assess the unit test code employing the Mocha testing framework. Confirm that:
