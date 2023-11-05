@@ -1,15 +1,18 @@
-language: "fr"
+# yaml-language-server: $schema=https://coderabbit.ai/integrations/coderabbit-overrides.v2.json
+
+language: "ja"
 early_access: false
 reviews:
-  high_level_summary: true
-  poem: true
+  high_level_summary: false
+  poem: false
   review_status: true
   collapse_walkthrough: false
   path_filters:
     - "!**/.xml"
   path_instructions:
-    - path: "**.tsx"
-      instructions: "Review the JavaScript code for conformity with the Google JavaScript style guide, highlighting any deviations."
+    - path: "**/.tsx"
+      instructions: |
+        "Review the JavaScript code for conformity with the Google JavaScript style guide, highlighting any deviations."
     - path: "tests/**.*"
       instructions: |
         "Assess the unit test code employing the Mocha testing framework. Confirm that:
@@ -23,8 +26,7 @@ reviews:
     drafts: false
     base_branches:
       - "main"
-      - "develop"
       - "feat"
       - "feat/coderabbit-yml"
 chat:
-  auto_reply: false
+  auto_reply: true
